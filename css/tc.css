@@ -1,0 +1,246 @@
+.ppsl{width:76%; margin: 0 auto;padding: 115px 0px 0px;
+	background:#f8f8f8;}
+.ppsl .zhu{text-align: center;font-size: 40px;
+	line-height: 40px;color: #434343;font-weight: bold;}
+.ppsl .xian{width: 40px;border-bottom: 1px solid #d3d3d3;
+ margin: 20px auto 0px;}
+.ppsl p{ text-align: center; font-size: 14px; color:#959595;
+	margin: 16px auto 40px;}
+.tc{width:76%; 
+	margin: 0 auto;
+	 }
+.tc li{list-style: none;
+	float: left;
+	 width:22%;
+ margin: 0 auto 115px; 
+ margin-right: 4%;
+ /*min-height: 300px;*/
+ text-align: center;
+ background: #fff;
+}
+/*.tc li:nth-child(1){
+	background: url(../images/atc.jpg) no-repeat 0 0 ;
+	background-size:100% ;
+}*/
+.tc li:nth-child(4){
+	margin-right: 0px;
+}
+.tc li .bt{
+	color: #fff;
+	font-size: 30px;
+	margin-top:-31%;
+  }
+  .tc li .jg{
+	font-size: 30px;
+	margin-top:27%;
+	 background: #fff;
+  }
+    .tc li .fgx{
+	width: 100%;
+	border-bottom: 1px solid #f8f8f8;
+	margin: 15px 0px;
+  }
+      .tc li p{
+	font-size: 14px; color:#959595;
+	line-height: 26px;
+  }
+.tc li a{
+	display: block;
+	width:125px ;
+	height:50px ;
+	border-radius: 500px;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	margin:10px auto 30px;
+	font-size: 18px;
+	/*position: absolute;
+	bottom:0px;*/
+}
+.tc li  .btc{
+background:#ff8549 ;
+}
+.tc li  .btc:hover{
+background:#f77535 ;
+}
+.tc li  .atc{
+background:#5eacf7 ;
+}
+.tc li  .atc:hover{
+background:#4f9ee9 ;
+}
+.tc li  .ctc{
+background:#8edc64 ;
+}
+.tc li  .ctc:hover{
+background:#80c859 ;
+}
+.tc li  .dtc{
+background:#a75bd8 ;
+}
+.tc li  .dtc:hover{
+background:#974bc8;
+}
+/*底部*/
+.db{
+	width: 100%;
+	height: 600px;
+	background: url(../images/dibu_bj.jpg) no-repeat 0 0;
+}
+.db_nr{
+	width: 76%;
+	margin: 0px auto;
+}
+.db_nr .l{
+	float: left;
+	color: #fff;
+	padding: 110px 0px 0px;
+}
+.db_nr .l .lxwm{
+	font-size: 40px;
+}
+.db_nr .l p{
+	font-size: 18px;
+	margin:30px 0 ;
+}
+.db_nr .l .jwjd{
+	font-size: 14px;
+	height: 29px;
+	line-height: 29px;
+	width: 100%;
+	padding-left: 40px; margin:149px 0 40px;
+	background: url(../images/img_83.png) no-repeat 0 0;
+}
+.db_nr .l .a{
+	display: block;
+	width:318px ;
+	height:60px ;
+	border-radius: 500px;
+	color:#fff;
+	text-align: center;
+	line-height: 60px;
+	font-size: 18px;
+	background:#ff3366 ;
+	/*float: left;*/
+}
+.db_nr .l a{
+	color:#fff;
+}
+.db_nr .l .b:hover{
+	text-decoration:underline 
+}
+.db_nr .l span{
+	display: block;
+	height:60px ;
+	line-height: 60px;
+	font-size: 14px;
+	margin-top: 20px;
+	float: left;
+	/*margin-left: 30px;*/
+}
+.db_nr .r{
+	position: relative;
+	float: right;
+	width: 330px;
+	color: #fff;
+	height: 600px;
+	margin-top: -5% ;
+	background: url(../images/r_bj.png) no-repeat 0 0;
+}
+.db_nr .r .jwjd{
+	font-size: 14px;
+	height: 37px;
+	line-height: 37px;
+	padding-left: 48px; margin:30% 0 30px;
+	margin-left: 80px;
+	background: url(../images/wx_tu.png) no-repeat 0 0;
+}
+.db_nr .r .wxt{
+margin-left: 80px;
+}
+.db_nr .r .zxrx{
+	position: absolute;
+	bottom:60px ;
+	width: 330px;
+	height: 91px;
+	padding-left: 55px;
+	padding-top: 12px;
+background: url(../images/r_dh.png) no-repeat 0 0;
+}
+.db_nr .r .zxrx .zxrx_a{
+	font-size: 18px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 40px;
+	background: url(../images/dibu_dh.png) no-repeat 0 0;
+}
+.db_nr .r .zxrx p{
+	font-size: 14px;
+	line-height: 32px;
+}
+.tc li .sdyypt{
+ 	width: 100%;
+ 	font-size: 18px;
+ 	color: #fff;
+ 	height:116px ;
+ 	line-height:116px ;
+ }
+ /**/
+.tc li .slwz{
+	display: block;
+width:50% ;
+height:50px ;
+border-radius: 500px;
+color:#fff;
+text-align: center;
+line-height: 50px;
+border: 1px solid #fff;
+font-size: 18px;
+background:#4f9ee9 ;
+position: absolute;
+top:300px;left: 0px;
+margin-left: 25%;
+}
+.tc li .slwz:hover{
+background:#2a85db ;
+}
+.tc li   .qqdxsjjfa span{
+	display: block;
+	height: 31px;
+	line-height: 31px;
+}
+
+.tc li   .sdyypt1{
+	margin-top: 20px; 
+	color:#4f9ee9;
+	font-size: 14px;
+	background:#fff;
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+}
+.tc li   .sdyypt1 .l{
+	float: left;
+	width: 70%;
+}
+.tc li   .sdyypt1 .r{
+	float: left;
+	width: 30%;
+	background:#4f9ee9;
+	color:#fff;
+}
+.tc li .sdyypt3{
+	width: 100%;
+	font-size: 18px;
+	color: #434343;
+	height:100px ;
+	line-height:100px ;
+}
+.tc li .wmdys_fu{
+	width: 80%;
+margin:-25px  auto 40px;
+	color: #959595;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}

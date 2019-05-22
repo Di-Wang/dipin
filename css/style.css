@@ -1,0 +1,606 @@
+html {
+	-webkit-text-size-adjust: none;/*解决chrome浏览器下字体不能小于12px*/
+}
+body {
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+html {
+	zoom:  1;/*缩放比例*/
+}
+html * {
+	outline: 0;/*元素轮廓*/
+	zoom: 1;
+}
+html button::-moz-focus-inner {/*Firefox的私有伪元素*/
+	border-color: transparent!important;/*设置边框颜色*/
+}
+body {
+	overflow-x: hidden;
+	font-size: 12px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+fieldset, a img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+li {
+	list-style: none;
+}
+caprion, th {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after {
+	content: '';
+}
+input[type="submit"], input[type="reset"], input[type="button"], button{
+	-webkit-appearance: none;/*去掉苹果的默认UI来渲染按钮*/
+}
+em, i {
+	font-style: normal;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;/*定元素是否可见*/
+}
+.clearfix {
+	display: block;
+}
+.clear {
+	clear: both;
+}/*清除浮动*/
+.colwrapper {
+	overflow: hidden;
+	zoom: 1;/*for ie*/
+	margin: 5px auto;
+}/* 高度自适应*/
+.strong {
+	font-weight: bold;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	margin: 0 auto;
+}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.transparent {
+	filter: alpha(opacity=50);/**兼容 ie*/
+	-moz-opacity: 0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/
+	-khtml-opacity: 0.5;/* 老版Safari */
+	opacity: 0.5;
+}
+.break {
+	word-wrap: break-word;/*长单词换行到下一行*/
+	overflow: hidden; /*word-break:break-all*/
+}
+.tal {
+	text-align: left
+}
+.tar {
+	text-align: right;
+}
+/*文字两侧对齐*/
+
+.justify {
+	text-align: justify;
+	text-justify: distribute-all-lines;/*ie6-8*/
+	text-align-last: justify;/* ie9*/
+	-moz-text-align-last: justify;/*ff*/
+	-webkit-text-align-last: justify;/*chrome 20+*/
+}
+.toe {
+	/*超出省略号*/
+
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {/* chrome*/
+.justify:after {
+	content: ".";
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+}
+}
+/* 兼容IE6的定位属性fixed，固定不动样式 */
+
+.fixed {
+	position: fixed;
+	clip: rect(0 100% 100% 0);
+	_position: absolute;
+	/* 底部 */
+
+	bottom: 0px;
+	left: 0px;
+ _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+/*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+
+	
+
+	/* 左侧 */
+
+	/*left:0px;*/
+
+	/*_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);*/
+
+	/*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+
+}
+/* 解决固定层在IE6下闪的问题 */
+
+*html {
+	background-image: url(about:blank);
+	background-attachment: fixed;
+}
+/*png图片ie6下透明滤镜实现写法*/
+
+.pngimg {
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/x.png');
+}
+/**
+
+ +------------------------------------------------------------------------------
+
+ * FCK 兼容解决方案
+
+ +------------------------------------------------------------------------------
+
+ * @subpackage  RBAC
+
+ +------------------------------------------------------------------------------
+
+ */
+
+em {
+	font-style: italic !important;
+}
+strike {
+	text-decoration: line-through !important;
+}
+strong {
+	font-weight: bold !important;
+}
+u {
+	text-decoration: underline !important;
+}
+/**
+
+ +------------------------------------------------------------------------------
+
+ * 表单样式
+
+ +------------------------------------------------------------------------------
+
+ * @subpackage  RBAC
+
+ +------------------------------------------------------------------------------
+
+ */
+
+
+
+/**
+
+ +------------------------------------------------------------------------------
+
+ * 网站整体颜色总汇
+
+ +------------------------------------------------------------------------------
+
+ * @codex  颜色:使用颜色的名称或者16进制代码,如 
+
+ * @subpackage  RBAC
+
+ +------------------------------------------------------------------------------
+
+ */
+
+.ff8600, ff86aa a {
+	color: #ff8600;
+}
+/**
+
+ +------------------------------------------------------------------------------
+
+ * 网站整字体大小
+
+ +------------------------------------------------------------------------------
+
+ * @codex   字体大小,直接使用"font+字体大小"作为名称,如
+
+ * @package  ORG
+
+ * @subpackage  RBAC
+
+ +------------------------------------------------------------------------------
+
+ */
+
+.font14px {
+	font-size: 14px;
+}
+.font9pt {
+	font-size: 9pt;
+}
+/*自定义字体*/
+
+/* @font-face {  font-family: danley;  src: url('../font/danley.ttf');  }  .danley {  font-family: danley; } */
+
+
+
+
+
+/**
+
+ +------------------------------------------------------------------------------
+
+ * 网站整布局命名规范
+
+ +------------------------------------------------------------------------------
+
+ * @codex   id和class命名采用该版块的英文单词或组合命名 如:newRelease
+
+ * @package  ORG
+
+ * @subpackage  RBAC
+
+ +------------------------------------------------------------------------------
+
+ */
+
+a {
+	color: #5d5d5e;
+	transition: all 0.3s ease-in-out 0s;
+}
+a:hover {
+	color: #3e6ed4;
+}
+body {
+	/*font-family: "Microsoft YaHei", sans-serif;*/
+}
+.css3 {
+	/*transition: all 0.3s ease-in-out 0s;*/
+
+	
+
+	-webkit-transform: translate3d(0, -20px, 0);
+	-ms-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -20px, 0);
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, transform;
+	-webkit-transition-duration: 1000ms;
+	transition-duration: 1000ms;
+	-webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.33, 0.98);
+	transition-timing-function: cubic-bezier(0.25, 0.46, 0.33, 0.98);
+	-webkit-transition-delay: 800ms;
+	transition-delay: 800ms
+}
+.css3.animated {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+ @media screen and (max-width: 650px) {
+}
+ @media screen and (max-width: 480px) {
+}
+.rotate {
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg); 	/* IE 9 */
+	-moz-transform: rotate(7deg); 	/* Firefox */
+	-webkit-transform: rotate(7deg); /* Safari 和 Chrome */
+	-o-transform: rotate(7deg); 	/* Opera */
+}
+body {
+	font-size: 12px;
+	line-height: 22px;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.gb-header, .gb-nav {
+	height: 114px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 8;
+}
+.gb-nav {
+	/* background: #ddd; */
+	z-index: 99999;
+}
+.gb-nav, .gb-header {
+	top: -86px;
+
+	-webkit-transition: all 0.5s;/**过渡属性*/
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+}
+.gb-nav.show, .gb-header.show {
+	top: 0;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+}
+.gh {
+	float: right;
+	height: 34px;
+	width: 34px;
+	margin-right: 42px;
+	margin-top: 42px;
+	position: relative;
+	transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	cursor: pointer;/**transition-property	规定设置过渡效果的 CSS 属性的名称。
+transition-duration	规定完成过渡效果需要多少秒或毫秒。
+transition-timing-function	规定速度效果的速度曲线。
+transition-delay	定义过渡效果何时开始。*/
+}
+.gh.selected {
+	transform: rotate(90deg);
+}
+.gh a {
+	background-color: #000;
+	display: block;
+	height: 4px;
+	margin-top: -2px;
+	position: relative;
+	top: 50%;
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	width: 100%;
+}
+.gh:hover a:before {
+	transform: translateY(-2px) rotate(0deg);
+	-webkit-transform: translateY(-2px) rotate(0deg);
+	-ms-transform: translateY(-2px) rotate(0deg);
+	/**旋转 
+	translateY(y)	定义转换，只是用 Y 轴的值。
+	rotate(angle)	定义 2D 旋转，在参数中规定角度。
+	*/
+}
+.gh:hover a:after {
+	transform: translateY(2px) rotate(0deg);
+	-webkit-transform: translateY(2px) rotate(0deg);
+	-ms-transform: translateY(2px) rotate(0deg);
+}
+.gh.selected:hover a:before {
+	transform: translateY(0px) rotate(-55deg);
+	-webkit-transform: translateY(0px) rotate(-55deg);
+	-ms-transform: translateY(0px) rotate(-55deg);
+}
+.gh.selected:hover a:after {
+	transform: translateY(0px) rotate(55deg);
+	-webkit-transform: translateY(0px) rotate(55deg);
+	-ms-transform: translateY(0px) rotate(55deg);
+}
+
+.gh a:after, .gh a:before {
+	background: #000;
+	content: '';
+	display: block;
+	height: 4px;
+	left: 0;
+	position: absolute;
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	width: 100%;
+}
+.gh a:after {
+	top: 10px;
+}
+.gh a:before {
+	top: -10px;
+}
+.gh.selected a:after, .gh.selected a:before {
+	top: 0;
+}
+.gh.selected a:before {
+	transform: translateY(0px) rotate(-45deg);
+	-webkit-transform: translateY(0px) rotate(-45deg);
+	-ms-transform: translateY(0px) rotate(-45deg);
+}
+.gh.selected a:after {
+	transform: translateY(0px) rotate(45deg);
+	-webkit-transform: translateY(0px) rotate(45deg);
+	-ms-transform: translateY(0px) rotate(45deg);
+}
+.gh.selected a {
+	background: transparent!important;
+}
+.gb-nav.show .gh a, .gb-nav.show .gh a:after, .gb-nav.show .gh a:before {
+	background: #fff;
+}
+
+.header .logo, .gb-nav .logo {
+	margin-left: 60px;
+	float: left;
+	display: inline;
+	margin-top: 24px;
+}
+.gb-nav .logo {
+	position: relative;
+}
+.gb-nav .logo img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gb-nav .logo img.img2 {
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+}
+.gb-nav.show .logo img.img2 {
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+}
+
+/* 弹出菜单 */
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #282828;
+	z-index: 9999;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-ms-opacity: 1;
+	-moz-opacity: 1;
+}
+#nav.hide {
+	top: -100%;
+	opacity: 0;
+	-webkit-opacity: 0;
+	-ms-opacity: 0;
+	-moz-opacity: 0;
+}
+.nav_top {
+	width: 100%;
+}
+.nav_main {
+	max-width: 1000px;
+	height: 514px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	margin-top: -250px;
+	display: table;
+}
+.nav_main h1 {
+	color: #fff;
+	font-size: 48px;
+	clear: both;
+	padding-left: 10px;
+	font-style: italic;/*斜体*/
+	font-family: "MS Serif", "New York", Microsoft YaHei;
+}
+.nav_main ul {
+	width: 100%;
+	padding-top: 130px;
+	display: table;
+}
+.nav_main ul li {
+	width: 257px;
+	height: 130px;
+	padding-left: 76px;
+	float: left;
+	color: #fff;
+}
+.nav_main ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav_main ul li h2 {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.nav_main ul li h2 a em {
+	color: #949494;
+	margin-left: 20px;
+	font-size: 12px;
+	font-style: normal;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.nav_main ul li div a {
+	color: #dbdbdb;
+	display: block;
+	line-height: 22px;
+	font-size: 12px;
+}
+.nav_main ul li div a:hover {
+	color: #fff;
+}
+.nav_main ul li.h0 {
+	background: url(../images/homes.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h1 {
+	background: url(../images/services.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h2 {
+	background: url(../images/cases.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h3 {
+	background: url(../images/abouts.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h4 {
+	background: url(../images/news.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h5 {
+	background: url(../images/Advantagesa.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h6 {
+	background: url(../images/Advantages.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h7 {
+	background: url(../images/jobs.png) no-repeat 10px 12px;
+}
+.nav_main ul li.h8 {
+	background: url(../images/contacts.png) no-repeat 10px 12px;
+}
+.nav_main ul li div a:after {
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
